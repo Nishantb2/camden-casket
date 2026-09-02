@@ -26,6 +26,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 75px;
 }
 
 
@@ -95,7 +96,8 @@ a {
 
 nav {
   display: flex;
-  gap: 32px;
+  align-items: center;
+  gap: 28px;
 }
 
 
@@ -109,6 +111,30 @@ nav a {
 
 nav a:hover {
   color: var(--orange);
+}
+
+
+.facebook-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+
+  color: white;
+}
+
+
+.facebook-link:hover {
+  color: #1877f2;
+}
+
+
+.facebook-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 
@@ -218,6 +244,8 @@ nav a:hover {
 .button.primary {
   background: var(--orange);
   color: white;
+  border: none;
+  cursor: pointer;
 }
 
 
@@ -294,7 +322,8 @@ nav a:hover {
 
 
 .section-heading h2,
-.about h2 {
+.about h2,
+.contact h2 {
   color: var(--dark);
 
   font-size: clamp(2rem, 4vw, 3.2rem);
@@ -459,6 +488,11 @@ nav a:hover {
 }
 
 
+.text-link:hover {
+  color: var(--orange-dark);
+}
+
+
 .hours > div {
   display: flex;
 
@@ -483,6 +517,166 @@ nav a:hover {
 
 .hours strong {
   color: var(--dark);
+}
+
+
+/* =========================
+   Contact
+========================= */
+
+.contact {
+  background: var(--cream);
+}
+
+
+.contact-grid {
+  display: grid;
+
+  grid-template-columns: 0.9fr 1.1fr;
+
+  gap: 70px;
+
+  align-items: start;
+}
+
+
+.contact-intro {
+  padding-top: 10px;
+}
+
+
+.contact-intro > p:not(.eyebrow) {
+  color: var(--muted);
+  font-size: 1.05rem;
+  max-width: 500px;
+}
+
+
+.contact-details {
+  margin-top: 35px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+
+.contact-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+
+.contact-detail > span {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+
+.contact-detail strong {
+  display: block;
+  color: var(--dark);
+  margin-bottom: 3px;
+}
+
+
+.contact-detail p {
+  color: var(--muted);
+}
+
+
+.contact-detail a {
+  color: var(--orange);
+  font-weight: 700;
+}
+
+
+.contact-detail a:hover {
+  color: var(--orange-dark);
+}
+
+
+.contact-form-card {
+  background: white;
+
+  padding: 35px;
+
+  border-radius: 18px;
+
+  border: 1px solid #eee6dc;
+
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.06);
+}
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+
+.form-group label {
+  display: block;
+
+  color: var(--dark);
+
+  font-weight: 700;
+
+  margin-bottom: 7px;
+}
+
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+
+  padding: 13px 15px;
+
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+
+  background: white;
+
+  color: var(--text);
+
+  font-family: inherit;
+  font-size: 1rem;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--orange);
+
+  box-shadow:
+    0 0 0 3px rgba(244, 123, 32, 0.12);
+}
+
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+
+.form-submit {
+  width: 100%;
+  font-size: 1rem;
+}
+
+
+.form-note {
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-align: center;
+  margin-top: 12px;
 }
 
 
@@ -539,6 +733,8 @@ nav a:hover {
 
   justify-content: space-between;
 
+  align-items: center;
+
   gap: 30px;
 
   padding-bottom: 35px;
@@ -560,8 +756,47 @@ nav a:hover {
 }
 
 
-.footer a {
-  color: var(--orange);
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+
+.footer-social p {
+  margin: 0;
+}
+
+
+.footer-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 38px;
+  height: 38px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  color: white;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.footer-social a:hover {
+  background: #1877f2;
+  transform: translateY(-2px);
+}
+
+
+.footer-social .facebook-icon {
+  width: 18px;
+  height: 18px;
 }
 
 
@@ -603,6 +838,8 @@ nav a:hover {
 
     flex-direction: column;
 
+    align-items: stretch;
+
     gap: 0;
 
     background: var(--dark);
@@ -623,13 +860,30 @@ nav a:hover {
   }
 
 
+  nav .facebook-link {
+    width: auto;
+    height: auto;
+
+    justify-content: flex-start;
+
+    padding: 15px 4%;
+  }
+
+
+  nav .facebook-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+
   .hero {
     padding: 75px 0;
   }
 
 
   .hero-content,
-  .about-grid {
+  .about-grid,
+  .contact-grid {
     grid-template-columns: 1fr;
   }
 
@@ -655,8 +909,39 @@ nav a:hover {
   }
 
 
+  .contact-grid {
+    gap: 40px;
+  }
+
+
+  .contact-form-card {
+    padding: 25px;
+  }
+
+
   .footer-content {
     flex-direction: column;
+    align-items: flex-start;
+  }
+
+}
+
+
+@media (max-width: 450px) {
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+
+  .hero-buttons .button {
+    text-align: center;
+    width: 100%;
+  }
+
+
+  .contact-form-card {
+    padding: 20px;
   }
 
 }
