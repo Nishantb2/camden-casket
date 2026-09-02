@@ -318,169 +318,253 @@
     </section>
 
 
-    <!-- Contact Us -->
-    <section class="contact section" id="contact">
-      <div class="container contact-grid">
+<!-- Contact Us -->
+<section class="contact section" id="contact">
+  <div class="container">
 
-        <div class="contact-intro">
-          <p class="eyebrow">CONTACT US</p>
+    <div class="contact-header">
+      <p class="eyebrow">CONTACT US</p>
 
-          <h2>Have a question?</h2>
+      <h2>We'd love to hear from you.</h2>
 
-          <p>
-            If you have a question about our products, availability
-            or anything else, send us a message and we'll get back
-            to you.
-          </p>
+      <p>
+        Have a question about a product, availability or anything else?
+        Send us a message and we'll get back to you.
+      </p>
+    </div>
 
-          <div class="contact-details">
-            <div class="contact-detail">
-              <span>📍</span>
-              <div>
-                <strong>Visit Us</strong>
-                <p>27 Camden Street Lower, Dublin 2</p>
-              </div>
-            </div>
 
-            <div class="contact-detail">
-              <span>📧</span>
-              <div>
-                <strong>Email</strong>
-                <p>camdencasketshop@gmail.com</p>
-              </div>
-            </div>
+    <div class="contact-grid">
 
-            <div class="contact-detail">
-              <span>📘</span>
-              <div>
-                <strong>Facebook</strong>
-                <p>
-                  <a
-                    href="https://www.facebook.com/profile.php?id=61576324045819"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Follow us on Facebook
-                  </a>
-                </p>
-              </div>
-            </div>
+      <!-- Contact Information -->
+      <div class="contact-info">
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📍</div>
+
+          <div>
+            <h3>Visit Us</h3>
+            <p>
+              27 Camden Street Lower<br>
+              Dublin 2, D02 KH42
+            </p>
           </div>
         </div>
 
 
-        <!-- Contact Form -->
-        <div class="contact-form-card">
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📧</div>
 
-          <form
-            action="https://formsubmit.co/camdencasketshop@gmail.com"
-            method="POST"
+          <div>
+            <h3>Email Us</h3>
+            <p>
+              camdencasketshop@gmail.com
+            </p>
+          </div>
+        </div>
+
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">🕐</div>
+
+          <div>
+            <h3>Opening Hours</h3>
+            <p>
+              Monday – Saturday<br>
+              10:00 AM – 5:30 PM
+            </p>
+          </div>
+        </div>
+
+
+        <div class="contact-social">
+          <p>Follow us on Facebook</p>
+
+          <a
+            href="https://www.facebook.com/profile.php?id=61576324045819"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit Camden Casket on Facebook"
+          >
+            <svg
+              class="facebook-icon"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.413c0-3.025 1.792-4.698 4.533-4.698 1.313 0 2.686.235 2.686.235v2.975h-1.514c-1.491 0-1.956.929-1.956 1.882v2.266h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"
+              />
+            </svg>
+
+            <span>Facebook</span>
+          </a>
+        </div>
+
+      </div>
+
+
+      <!-- Contact Form -->
+      <div class="contact-form-card">
+
+        <div class="form-header">
+          <h3>Send us a message</h3>
+
+          <p>
+            Fill in the form below and we'll receive your message directly.
+          </p>
+        </div>
+
+
+        <form
+          action="https://formsubmit.co/camdencasketshop@gmail.com"
+          method="POST"
+        >
+
+          <!-- FormSubmit settings -->
+          <input
+            type="hidden"
+            name="_subject"
+            value="New Contact Form Message - Camden Casket"
           >
 
-            <!-- FormSubmit settings -->
-            <input
-              type="hidden"
-              name="_subject"
-              value="New Contact Form Message - Camden Casket"
-            >
+          <input
+            type="hidden"
+            name="_template"
+            value="table"
+          >
 
-            <input
-              type="hidden"
-              name="_template"
-              value="table"
-            >
+          <input
+            type="hidden"
+            name="_captcha"
+            value="true"
+          >
 
-            <input
-              type="hidden"
-              name="_captcha"
-              value="true"
-            >
+          <input
+            type="hidden"
+            name="_next"
+            value="https://nishantb2.github.io/camden-casket/#contact"
+          >
 
-            <!-- Redirect after successful submission -->
-            <input
-              type="hidden"
-              name="_next"
-              value="https://nishantb2.github.io/camden-casket/#contact"
-            >
-
-            <!-- Honeypot spam field -->
-            <input
-              type="text"
-              name="_honey"
-              style="display:none"
-              tabindex="-1"
-              autocomplete="off"
-            >
+          <!-- Honeypot spam protection -->
+          <input
+            type="text"
+            name="_honey"
+            style="display:none"
+            tabindex="-1"
+            autocomplete="off"
+          >
 
 
-            <div class="form-group">
-              <label for="name">Name</label>
+          <!-- Name -->
+          <div class="form-group">
+
+            <label for="name">
+              Your Name
+            </label>
+
+            <div class="input-wrapper">
+              <span class="input-icon">👤</span>
 
               <input
                 type="text"
                 id="name"
                 name="name"
-                placeholder="Your name"
+                placeholder="Enter your name"
                 autocomplete="name"
                 required
               >
             </div>
 
+          </div>
 
-            <div class="form-group">
-              <label for="email">Email Address</label>
+
+          <!-- Email -->
+          <div class="form-group">
+
+            <label for="email">
+              Email Address
+            </label>
+
+            <div class="input-wrapper">
+              <span class="input-icon">✉️</span>
 
               <input
                 type="email"
                 id="email"
                 name="email"
-                placeholder="your@email.com"
+                placeholder="you@example.com"
                 autocomplete="email"
                 required
               >
             </div>
 
+          </div>
 
-            <div class="form-group">
-              <label for="subject">Subject</label>
+
+          <!-- Subject -->
+          <div class="form-group">
+
+            <label for="subject">
+              Subject
+            </label>
+
+            <div class="input-wrapper">
+              <span class="input-icon">💬</span>
 
               <input
                 type="text"
                 id="subject"
                 name="subject"
-                placeholder="What would you like to ask?"
+                placeholder="What can we help you with?"
                 required
               >
             </div>
 
-
-            <div class="form-group">
-              <label for="message">Message</label>
-
-              <textarea
-                id="message"
-                name="message"
-                rows="6"
-                placeholder="Write your message here..."
-                required
-              ></textarea>
-            </div>
+          </div>
 
 
-            <button type="submit" class="button primary form-submit">
-              Send Message
-            </button>
+          <!-- Message -->
+          <div class="form-group">
 
-            <p class="form-note">
-              We'll receive your message by email.
-            </p>
+            <label for="message">
+              Your Message
+            </label>
 
-          </form>
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              placeholder="Write your message here..."
+              required
+            ></textarea>
 
-        </div>
+          </div>
+
+
+          <!-- Submit -->
+          <button
+            type="submit"
+            class="button primary form-submit"
+          >
+            <span>Send Message</span>
+            <span class="submit-arrow">→</span>
+          </button>
+
+
+          <div class="form-security">
+            <span>🔒</span>
+            <p>Your information is only used to respond to your enquiry.</p>
+          </div>
+
+        </form>
 
       </div>
-    </section>
+
+    </div>
+
+  </div>
+</section>
+```
 
 
     <!-- Call to action -->
