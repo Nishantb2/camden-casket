@@ -6,30 +6,83 @@ const menuToggle = document.getElementById("menuToggle");
 const navMenu = document.getElementById("navMenu");
 
 menuToggle.addEventListener("click", () => {
-  const isActive = navMenu.classList.toggle("active");
 
-  menuToggle.setAttribute("aria-expanded", isActive);
+  const isActive =
+    navMenu.classList.toggle("active");
+
+  menuToggle.setAttribute(
+    "aria-expanded",
+    isActive
+  );
+
 });
 
 
 // =========================
-// Close mobile menu
-// after clicking a link
+// Navigation Links
 // =========================
 
-const navLinks = document.querySelectorAll("#navMenu a");
+const navLinks =
+  document.querySelectorAll("#navMenu a");
 
 navLinks.forEach((link) => {
-  link.addEventListener("click", () => {
+
+  link.addEventListener("click", (event) => {
+
+    const targetId =
+      link.getAttribute("href");
+
+    if (
+      targetId &&
+      targetId.startsWith("#")
+    ) {
+
+      const targetSection =
+        document.querySelector(targetId);
+
+      if (targetSection) {
+
+        event.preventDefault();
+
+        const header =
+          document.querySelector(".header");
+
+        const headerHeight =
+          header.offsetHeight;
+
+        const sectionPosition =
+          targetSection.getBoundingClientRect().top +
+          window.scrollY -
+          headerHeight;
+
+        window.scrollTo({
+
+          top: sectionPosition,
+
+          behavior: "smooth"
+
+        });
+
+      }
+
+    }
+
+    // Close mobile menu
+
     navMenu.classList.remove("active");
-    menuToggle.setAttribute("aria-expanded", "false");
+
+    menuToggle.setAttribute(
+      "aria-expanded",
+      "false"
+    );
+
   });
+
 });
 
 
 // =========================
-// Automatically update
-// copyright year
+// Copyright Year
 // =========================
 
 document.getElementById("year").textContent =
