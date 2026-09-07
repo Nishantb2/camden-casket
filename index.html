@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,7 @@
 
   <meta
     name="description"
-    content="Camden Casket is your local shop on Camden Street, Dublin. Browse snacks, chocolates, electronics, toys, stationery, cleaning supplies and everyday essentials."
+    content="Camden Casket is your local shop on Camden Street, Dublin. Browse household products, toys, hardware, toiletries, chocolates, electronics and everyday essentials."
   >
 
   <link rel="stylesheet" href="style.css">
@@ -16,13 +17,52 @@
 
 <body>
 
-  <!-- Navigation -->
+  <!-- =========================
+       TOP BAR
+  ========================== -->
+
+  <div class="top-bar">
+    <div class="container top-bar-content">
+
+      <div class="top-location">
+        📍 Camden Casket, Dublin 2
+      </div>
+
+      <div class="top-stock">
+        🛍️ Household • Toys • Hardware • Toiletries • Fancy Goods
+      </div>
+
+      <a
+        href="https://www.facebook.com/profile.php?id=61576324045819"
+        target="_blank"
+        rel="noopener"
+        class="facebook-top"
+        aria-label="Visit Camden Casket on Facebook"
+      >
+        f
+      </a>
+
+    </div>
+  </div>
+
+
+  <!-- =========================
+       HEADER / NAVIGATION
+  ========================== -->
+
   <header class="header">
+
     <div class="container nav">
 
       <a href="#home" class="logo">
-        Camden <span>Casket</span>
+        <span class="logo-mark">CC</span>
+
+        <span class="logo-text">
+          <strong>CAMDEN</strong>
+          <strong>CASKET</strong>
+        </span>
       </a>
+
 
       <button
         class="menu-toggle"
@@ -33,281 +73,624 @@
         ☰
       </button>
 
+
       <nav id="navMenu">
+
         <a href="#home">Home</a>
+
         <a href="#products">What We Stock</a>
-        <a href="#about">About</a>
-        <a href="#visit">Visit Us</a>
+
+        <a href="#about">About Us</a>
+
         <a href="#contact">Contact Us</a>
 
-        <!-- Facebook -->
-        <a
-          href="https://www.facebook.com/profile.php?id=61576324045819"
-          class="facebook-link"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Visit Camden Casket on Facebook"
-          title="Facebook"
-        >
-          <svg
-            class="facebook-icon"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path
-              d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.413c0-3.025 1.792-4.698 4.533-4.698 1.313 0 2.686.235 2.686.235v2.975h-1.514c-1.491 0-1.956.929-1.956 1.882v2.266h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"
-            />
-          </svg>
-        </a>
+        <a href="#visit">Visit Us</a>
+
       </nav>
 
+
+      <a
+        href="https://www.facebook.com/profile.php?id=61576324045819"
+        target="_blank"
+        rel="noopener"
+        class="facebook-icon"
+        aria-label="Visit Camden Casket on Facebook"
+      >
+        f
+      </a>
+
     </div>
+
   </header>
 
 
   <main>
 
-    <!-- Hero -->
+    <!-- =========================
+         HERO
+    ========================== -->
+
     <section class="hero" id="home">
+
       <div class="container hero-content">
 
         <div class="hero-text">
-          <p class="eyebrow">YOUR LOCAL SHOP ON CAMDEN STREET</p>
+
+          <p class="eyebrow">
+            WELCOME TO
+          </p>
 
           <h1>
-            Everyday essentials,
-            <span>all in one place.</span>
+            CAMDEN
+            <span>CASKET</span>
           </h1>
 
           <p class="hero-description">
-            From tasty treats and chocolates to toys, electronics,
-            stationery and cleaning supplies — find what you need
-            at Camden Casket.
+            Your local shop for everyday essentials,
+            quality products and great value.
           </p>
 
-          <div class="hero-buttons">
-            <a
-              class="button primary"
-              href="https://www.google.com/maps/search/?api=1&query=27+Camden+Street+Lower+Dublin+2"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Get Directions
-            </a>
+          <a
+            href="#products"
+            class="button primary"
+          >
+            Explore Our Range
+            <span>→</span>
+          </a>
 
-            <a class="button secondary" href="#contact">
-              Contact Us
-            </a>
-          </div>
         </div>
 
-        <div class="hero-card">
-          <div class="shop-icon">🛍️</div>
 
-          <h2>Camden Casket</h2>
+        <div class="hero-image">
 
-          <p>27 Camden Street Lower</p>
-          <p>Dublin 2, D02 KH42</p>
+          <img
+            src="shop-front.jpg"
+            alt="Camden Casket shop on Camden Street, Dublin"
+          >
 
-          <div class="rating">
-            <strong>★ 4.5</strong>
-            <span>20 reviews</span>
-          </div>
         </div>
 
       </div>
+
     </section>
 
 
-    <!-- Products -->
-    ```html
-<div class="product-grid">
+    <!-- =========================
+         FEATURES
+    ========================== -->
 
-  <article class="product-card">
-    <div class="product-icon">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.2 2.2-2.1-.4-.4-2.1 2.2-2.2z"/>
-        <path d="M17 3l4 4"/>
-      </svg>
-    </div>
+    <section class="features">
 
-    <h3>Hardware Tools</h3>
+      <div class="container features-grid">
 
-    <p>
-      Handy tools and practical essentials for everyday jobs.
-    </p>
-  </article>
+        <div class="feature">
 
+          <div class="feature-icon">
+            ✓
+          </div>
 
-  <article class="product-card">
-    <div class="product-icon">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M7 3h10v18H7z"/>
-        <path d="M7 8h10"/>
-        <path d="M9 5h6"/>
-        <path d="M9 12h6"/>
-        <path d="M9 16h6"/>
-      </svg>
-    </div>
+          <div>
+            <h3>Quality Products</h3>
+            <p>Trusted brands & great value</p>
+          </div>
 
-    <h3>Chocolates & Treats</h3>
-
-    <p>
-      Sweet treats for every occasion.
-    </p>
-  </article>
+        </div>
 
 
-  <article class="product-card">
-    <div class="product-icon">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <rect x="6" y="7" width="12" height="10" rx="2"/>
-        <path d="M9 7V5h6v2"/>
-        <path d="M9 12h6"/>
-        <path d="M12 10v4"/>
-        <path d="M18 10h2v4h-2"/>
-      </svg>
-    </div>
+        <div class="feature">
 
-    <h3>Electronics</h3>
+          <div class="feature-icon">
+            🏪
+          </div>
 
-    <p>
-      Handy electronic items and everyday accessories.
-    </p>
-  </article>
+          <div>
+            <h3>Local Shop</h3>
+            <p>Serving our local community</p>
+          </div>
+
+        </div>
 
 
-  <article class="product-card">
-    <div class="product-icon">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M5 8h14"/>
-        <path d="M7 8V5h10v3"/>
-        <path d="M6 8l1 11h10l1-11"/>
-        <path d="M9 12h6"/>
-        <path d="M10 15h4"/>
-      </svg>
-    </div>
+        <div class="feature">
 
-    <h3>Toys</h3>
+          <div class="feature-icon">
+            ♥
+          </div>
 
-    <p>
-      Fun finds for children and families.
-    </p>
-  </article>
+          <div>
+            <h3>Everyday Essentials</h3>
+            <p>For your home & family</p>
+          </div>
+
+        </div>
 
 
-  <article class="product-card">
-    <div class="product-icon">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M5 4h14v16H5z"/>
-        <path d="M8 8h8"/>
-        <path d="M8 12h8"/>
-        <path d="M8 16h5"/>
-      </svg>
-    </div>
+        <div class="feature">
 
-    <h3>Stationery</h3>
+          <div class="feature-icon">
+            ★
+          </div>
 
-    <p>
-      Useful stationery for home, school and work.
-    </p>
-  </article>
+          <div>
+            <h3>Wide Range</h3>
+            <p>Household, toys, hardware & more</p>
+          </div>
 
+        </div>
 
-  <article class="product-card">
-    <div class="product-icon">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M5 19h14"/>
-        <path d="M8 19l2-10h4l2 10"/>
-        <path d="M10 9l-1-4h6l-1 4"/>
-        <path d="M7 13h10"/>
-      </svg>
-    </div>
+      </div>
 
-    <h3>Cleaning Supplies</h3>
-
-    <p>
-      Sweeping brushes, mops and other household essentials.
-    </p>
-  </article>
+    </section>
 
 
-  <article class="product-card">
-    <div class="product-icon">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M8 6h8"/>
-        <path d="M9 6V4h6v2"/>
-        <path d="M7 8h10l-1 13H8L7 8z"/>
-        <path d="M10 11v7"/>
-        <path d="M14 11v7"/>
-      </svg>
-    </div>
+    <!-- =========================
+         PRODUCTS
+    ========================== -->
 
-    <h3>Toiletries</h3>
+    <section
+      class="products section"
+      id="products"
+    >
 
-    <p>
-      Everyday personal care and bathroom essentials.
-    </p>
-  </article>
+      <div class="container">
 
-</div>
+        <div class="section-heading centered">
+
+          <p class="eyebrow">
+            WHAT WE STOCK
+          </p>
+
+          <h2>
+            Shop by Category
+          </h2>
+
+          <p>
+            Explore our range of useful everyday products,
+            treats and essentials.
+          </p>
+
+        </div>
 
 
+        <div class="product-grid">
 
-    <!-- About -->
-    <section class="about section" id="about">
+
+          <!-- Household -->
+
+          <article class="product-card">
+
+            <div class="category-image household">
+              🧹
+            </div>
+
+            <div class="product-card-content">
+
+              <h3>Household</h3>
+
+              <p>
+                Cleaning products and everyday household essentials.
+              </p>
+
+              <span class="card-arrow">→</span>
+
+            </div>
+
+          </article>
+
+
+          <!-- Toys -->
+
+          <article class="product-card">
+
+            <div class="category-image toys">
+              🧸
+            </div>
+
+            <div class="product-card-content">
+
+              <h3>Toys</h3>
+
+              <p>
+                Fun toys and gifts for children and families.
+              </p>
+
+              <span class="card-arrow">→</span>
+
+            </div>
+
+          </article>
+
+
+          <!-- Hardware -->
+
+          <article class="product-card">
+
+            <div class="category-image hardware">
+              🔧
+            </div>
+
+            <div class="product-card-content">
+
+              <h3>Hardware</h3>
+
+              <p>
+                Handy tools and practical items for everyday jobs.
+              </p>
+
+              <span class="card-arrow">→</span>
+
+            </div>
+
+          </article>
+
+
+          <!-- Toiletries -->
+
+          <article class="product-card">
+
+            <div class="category-image toiletries">
+              🧴
+            </div>
+
+            <div class="product-card-content">
+
+              <h3>Toiletries</h3>
+
+              <p>
+                Personal care and everyday bathroom essentials.
+              </p>
+
+              <span class="card-arrow">→</span>
+
+            </div>
+
+          </article>
+
+
+          <!-- Fancy Goods -->
+
+          <article class="product-card">
+
+            <div class="category-image fancy">
+              🎁
+            </div>
+
+            <div class="product-card-content">
+
+              <h3>Fancy Goods</h3>
+
+              <p>
+                Gifts, accessories and interesting finds.
+              </p>
+
+              <span class="card-arrow">→</span>
+
+            </div>
+
+          </article>
+
+
+          <!-- Chocolates -->
+
+          <article class="product-card">
+
+            <div class="category-image chocolate">
+              🍫
+            </div>
+
+            <div class="product-card-content">
+
+              <h3>Chocolates & Treats</h3>
+
+              <p>
+                Sweet treats for every occasion.
+              </p>
+
+              <span class="card-arrow">→</span>
+
+            </div>
+
+          </article>
+
+
+          <!-- Electronics -->
+
+          <article class="product-card">
+
+            <div class="category-image electronics">
+              🔌
+            </div>
+
+            <div class="product-card-content">
+
+              <h3>Electronics</h3>
+
+              <p>
+                Useful electronic accessories and everyday items.
+              </p>
+
+              <span class="card-arrow">→</span>
+
+            </div>
+
+          </article>
+
+
+          <!-- Stationery -->
+
+          <article class="product-card">
+
+            <div class="category-image stationery">
+              ✏️
+            </div>
+
+            <div class="product-card-content">
+
+              <h3>Stationery</h3>
+
+              <p>
+                Useful stationery for home, school and work.
+              </p>
+
+              <span class="card-arrow">→</span>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
+    <section
+      class="about section"
+      id="about"
+    >
+
       <div class="container about-grid">
 
         <div>
-          <p class="eyebrow">ABOUT US</p>
 
-          <h2>Your neighbourhood shop on Camden Street.</h2>
+          <p class="eyebrow">
+            ABOUT US
+          </p>
+
+          <h2>
+            Your neighbourhood shop
+            on Camden Street.
+          </h2>
+
         </div>
 
+
         <div class="about-text">
+
           <p>
-            Camden Casket is a local convenience shop serving
-            customers on Camden Street and the surrounding Dublin
-            community.
+            Camden Casket is a local shop serving customers
+            on Camden Street and the surrounding Dublin community.
           </p>
 
           <p>
-            Whether you're looking for a quick snack, a sweet treat,
-            stationery, a toy, an electronic accessory or household
-            cleaning supplies, we're here to help you find what you need.
+            Whether you're looking for a quick snack,
+            a sweet treat, stationery, a toy, an electronic
+            accessory or household supplies, we're here to help.
           </p>
 
           <p>
-            Pop in and have a look around — you never know what
-            useful find you might discover.
+            Pop in and have a look around — you never know
+            what useful find you might discover.
           </p>
+
         </div>
 
       </div>
+
     </section>
 
 
-    <!-- Visit -->
-    <section class="visit section" id="visit">
-      <div class="container">
+    <!-- =========================
+         CONTACT
+    ========================== -->
 
-        <div class="section-heading">
-          <p class="eyebrow">COME VISIT US</p>
+    <section
+      class="contact section"
+      id="contact"
+    >
 
-          <h2>Find Camden Casket.</h2>
+      <div class="container contact-grid">
+
+        <div class="contact-intro">
+
+          <p class="eyebrow">
+            CONTACT US
+          </p>
+
+          <h2>
+            Have a question?
+          </h2>
 
           <p>
-            We're conveniently located on Camden Street Lower in Dublin 2.
+            Send us a message and we'll get back to you.
           </p>
+
+
+          <div class="contact-details">
+
+            <div>
+              <span>📍</span>
+
+              <p>
+                27 Camden Street Lower<br>
+                Dublin 2, D02 KH42
+              </p>
+            </div>
+
+
+            <div>
+              <span>📧</span>
+
+              <p>
+                camdencasketshop@gmail.com
+              </p>
+            </div>
+
+
+            <div>
+              <span>📘</span>
+
+              <a
+                href="https://www.facebook.com/profile.php?id=61576324045819"
+                target="_blank"
+                rel="noopener"
+              >
+                Follow us on Facebook
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <form
+          class="contact-form"
+          action="https://formsubmit.co/camdencasketshop@gmail.com"
+          method="POST"
+        >
+
+          <input
+            type="hidden"
+            name="_subject"
+            value="New Contact Form Message - Camden Casket"
+          >
+
+          <input
+            type="hidden"
+            name="_captcha"
+            value="false"
+          >
+
+          <input
+            type="hidden"
+            name="_template"
+            value="table"
+          >
+
+          <div class="form-group">
+
+            <label for="name">
+              Your Name
+            </label>
+
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            >
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label for="email">
+              Email Address
+            </label>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+              required
+            >
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label for="message">
+              Message
+            </label>
+
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              placeholder="How can we help?"
+              required
+            ></textarea>
+
+          </div>
+
+
+          <button
+            type="submit"
+            class="button primary form-button"
+          >
+            Send Message
+            <span>→</span>
+          </button>
+
+        </form>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         VISIT
+    ========================== -->
+
+    <section
+      class="visit section"
+      id="visit"
+    >
+
+      <div class="container">
+
+        <div class="section-heading centered">
+
+          <p class="eyebrow">
+            COME VISIT US
+          </p>
+
+          <h2>
+            Find Camden Casket.
+          </h2>
+
+          <p>
+            We're conveniently located on Camden Street Lower
+            in Dublin 2.
+          </p>
+
         </div>
 
 
         <div class="visit-grid">
 
-          <div class="info-card">
-            <span class="info-icon">📍</span>
 
-            <h3>Address</h3>
+          <div class="info-card">
+
+            <span class="info-icon">
+              📍
+            </span>
+
+            <h3>
+              Address
+            </h3>
 
             <p>
               27 Camden Street Lower<br>
@@ -319,20 +702,27 @@
             <a
               href="https://www.google.com/maps/search/?api=1&query=27+Camden+Street+Lower+Dublin+2"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               class="text-link"
             >
               Open in Google Maps →
             </a>
+
           </div>
 
 
           <div class="info-card">
-            <span class="info-icon">🕐</span>
 
-            <h3>Opening Hours</h3>
+            <span class="info-icon">
+              🕐
+            </span>
+
+            <h3>
+              Opening Hours
+            </h3>
 
             <div class="hours">
+
               <div>
                 <span>Monday – Saturday</span>
                 <strong>10:00 AM – 5:30 PM</strong>
@@ -342,351 +732,141 @@
                 <span>Sunday</span>
                 <strong>Closed</strong>
               </div>
+
             </div>
 
           </div>
 
 
           <div class="info-card">
-            <span class="info-icon">📘</span>
 
-            <h3>Facebook</h3>
+            <span class="info-icon">
+              📘
+            </span>
+
+            <h3>
+              Facebook
+            </h3>
 
             <p>
-              Follow Camden Casket on Facebook for updates,
-              products and news.
+              Follow Camden Casket for updates and new products.
             </p>
 
             <a
               href="https://www.facebook.com/profile.php?id=61576324045819"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               class="text-link"
             >
-              Visit our Facebook page →
+              Visit our Facebook →
             </a>
+
           </div>
+
 
         </div>
 
       </div>
+
     </section>
 
 
-<!-- Contact Us -->
-<section class="contact section" id="contact">
-  <div class="container">
+    <!-- =========================
+         CTA
+    ========================== -->
 
-    <div class="contact-header">
-      <p class="eyebrow">CONTACT US</p>
-
-      <h2>We'd love to hear from you.</h2>
-
-      <p>
-        Have a question about a product, availability or anything else?
-        Send us a message and we'll get back to you.
-      </p>
-    </div>
-
-
-    <div class="contact-grid">
-
-      <!-- Contact Information -->
-      <div class="contact-info">
-
-        <div class="contact-detail">
-          <div class="contact-detail-icon">📍</div>
-
-          <div>
-            <h3>Visit Us</h3>
-            <p>
-              27 Camden Street Lower<br>
-              Dublin 2, D02 NV09
-            </p>
-          </div>
-        </div>
-
-
-        <div class="contact-detail">
-          <div class="contact-detail-icon">📧</div>
-
-          <div>
-            <h3>Email Us</h3>
-            <p>
-              camdencasketshop@gmail.com
-            </p>
-          </div>
-        </div>
-
-
-        <div class="contact-detail">
-          <div class="contact-detail-icon">🕐</div>
-
-          <div>
-            <h3>Opening Hours</h3>
-            <p>
-              Monday – Saturday<br>
-              10:00 AM – 5:30 PM
-            </p>
-          </div>
-        </div>
-
-
-        <div class="contact-social">
-          <p>Follow us on Facebook</p>
-
-          <a
-            href="https://www.facebook.com/profile.php?id=61576324045819"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Visit Camden Casket on Facebook"
-          >
-            <svg
-              class="facebook-icon"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path
-                d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.413c0-3.025 1.792-4.698 4.533-4.698 1.313 0 2.686.235 2.686.235v2.975h-1.514c-1.491 0-1.956.929-1.956 1.882v2.266h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"
-              />
-            </svg>
-
-            <span>Facebook</span>
-          </a>
-        </div>
-
-      </div>
-
-
-      <!-- Contact Form -->
-      <div class="contact-form-card">
-
-        <div class="form-header">
-          <h3>Send us a message</h3>
-
-          <p>
-            Fill in the form below and we'll receive your message directly.
-          </p>
-        </div>
-
-
-        <form
-          action="https://formsubmit.co/camdencasketshop@gmail.com"
-          method="POST"
-        >
-
-          <!-- FormSubmit settings -->
-          <input
-            type="hidden"
-            name="_subject"
-            value="New Contact Form Message - Camden Casket"
-          >
-
-          <input
-            type="hidden"
-            name="_template"
-            value="table"
-          >
-
-          <input
-            type="hidden"
-            name="_captcha"
-            value="true"
-          >
-
-          <input
-            type="hidden"
-            name="_next"
-            value="https://nishantb2.github.io/camden-casket/#contact"
-          >
-
-          <!-- Honeypot spam protection -->
-          <input
-            type="text"
-            name="_honey"
-            style="display:none"
-            tabindex="-1"
-            autocomplete="off"
-          >
-
-
-          <!-- Name -->
-          <div class="form-group">
-
-            <label for="name">
-              Your Name
-            </label>
-
-            <div class="input-wrapper">
-              <span class="input-icon">👤</span>
-
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Enter your name"
-                autocomplete="name"
-                required
-              >
-            </div>
-
-          </div>
-
-
-          <!-- Email -->
-          <div class="form-group">
-
-            <label for="email">
-              Email Address
-            </label>
-
-            <div class="input-wrapper">
-              <span class="input-icon">✉️</span>
-
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="you@example.com"
-                autocomplete="email"
-                required
-              >
-            </div>
-
-          </div>
-
-
-          <!-- Subject -->
-          <div class="form-group">
-
-            <label for="subject">
-              Subject
-            </label>
-
-            <div class="input-wrapper">
-              <span class="input-icon">💬</span>
-
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                placeholder="What can we help you with?"
-                required
-              >
-            </div>
-
-          </div>
-
-
-          <!-- Message -->
-          <div class="form-group">
-
-            <label for="message">
-              Your Message
-            </label>
-
-            <textarea
-              id="message"
-              name="message"
-              rows="6"
-              placeholder="Write your message here..."
-              required
-            ></textarea>
-
-          </div>
-
-
-          <!-- Submit -->
-          <button
-            type="submit"
-            class="button primary form-submit"
-          >
-            <span>Send Message</span>
-            <span class="submit-arrow">→</span>
-          </button>
-
-
-          <div class="form-security">
-            <span>🔒</span>
-            <p>Your information is only used to respond to your enquiry.</p>
-          </div>
-
-        </form>
-
-      </div>
-
-    </div>
-
-  </div>
-</section>
-```
-
-
-    <!-- Call to action -->
     <section class="cta">
+
       <div class="container">
 
-        <h2>Need something nearby?</h2>
+        <p class="eyebrow">
+          CAMDEN STREET, DUBLIN 2
+        </p>
+
+        <h2>
+          Need something nearby?
+        </h2>
 
         <p>
-          Drop into Camden Casket on Camden Street.
+          Drop into Camden Casket and have a look around.
         </p>
 
         <a
           class="button light"
           href="https://www.google.com/maps/search/?api=1&query=27+Camden+Street+Lower+Dublin+2"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener"
         >
-          Get Directions
+          Get Directions →
         </a>
 
       </div>
+
     </section>
 
   </main>
 
 
-  <!-- Footer -->
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
   <footer class="footer">
+
     <div class="container footer-content">
 
       <div>
-        <div class="footer-logo">Camden Casket</div>
-        <p>Your local shop on Camden Street.</p>
+
+        <div class="footer-logo">
+          CAMDEN CASKET
+        </div>
+
+        <p>
+          Your local shop on Camden Street.
+        </p>
+
       </div>
 
+
+      <div class="footer-address">
+
+        <p>
+          27 Camden Street Lower<br>
+          Dublin 2, D02 NV09
+        </p>
+
+      </div>
+
+
       <div class="footer-social">
-        <p>Follow us</p>
 
         <a
           href="https://www.facebook.com/profile.php?id=61576324045819"
           target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Camden Casket Facebook"
-          title="Facebook"
+          rel="noopener"
+          class="facebook-footer"
+          aria-label="Facebook"
         >
-          <svg
-            class="facebook-icon"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path
-              d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.413c0-3.025 1.792-4.698 4.533-4.698 1.313 0 2.686.235 2.686.235v2.975h-1.514c-1.491 0-1.956.929-1.956 1.882v2.266h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"
-            />
-          </svg>
+          f
         </a>
+
       </div>
 
     </div>
 
+
     <div class="copyright">
-      © <span id="year"></span> Camden Casket. All rights reserved.
+
+      © <span id="year"></span>
+      Camden Casket. All rights reserved.
+
     </div>
+
   </footer>
 
 
   <script src="script.js"></script>
 
 </body>
+
 </html>
